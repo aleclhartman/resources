@@ -1,0 +1,12 @@
+3.11_case_exercises
+
+-- IF()
+
+IF(source_column_name [=, <, >, !=...] conditional_statement, value_to_assign
+	, other_value_to_assign)
+
+-- CASE Statements
+ 
+-- Aggregating
+
+

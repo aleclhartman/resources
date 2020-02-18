@@ -1,0 +1,39 @@
+CREATE TEMPORARY TABLE instruments(
+	name VARCHAR(200) NOT NULL
+	);
+
+SELECT *
+FROM instruments;
+
+INSERT INTO instruments (name) VALUES ("paino");
+
+SELECT *
+FROM instruments;
+
+INSERT INTO instruments (name) VALUES
+("guitar"),
+("bass"),
+("saxophone"),
+("violin"),
+("cello"),
+("harmonica"),
+("trumpet");
+
+SELECT *
+FROM instruments;
+
+CREATE TABLE stuff(
+	name VARCHAR(200),
+	quantity INT UNSIGNED
+	);
+	
+INSERT INTO stuff (name, quantity)
+VALUES 
+("do-hicky", 4),
+("yo-yo", 9),
+("shoe horn", 420);
+
+SELECT *
+FROM stuff;
+
+DROP TABLE stuff;

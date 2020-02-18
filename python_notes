@@ -1,0 +1,87 @@
+not only works only with the right side of the operator
+
+1 + 2
+
+4 / 3
+1.3333333
+
+4 // 3
+1
+
+python is case sensitive
+
+In [17]: 'a' == 'A'                                                             
+Out[17]: False
+
+types of two operands need to be consistent
+
+In [19]: 'a' + True                                                             
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-19-0cc81d5c2806> in <module>
+----> 1 'a' + True
+
+TypeError: can only concatenate str (not "bool") to str
+
+name = "Curie"                                                          
+
+In [7]: "Hello, " + name + "!"                                                  
+Out[7]: 'Hello, Curie!'
+
+In [8]: "hello, %s!" % name                                                     
+Out[8]: 'hello, Curie!'
+
+In [9]: weather = 'somewhat overcast'                                           
+
+In [10]: 'Hello, %s! The weather is %s' % (name, weather)                       
+Out[10]: 'Hello, Curie! The weather is somewhat overcast'
+
+In [11]: 'Hello, {}! The weather is {}.'.format(name, weather)                  
+Out[11]: 'Hello, Curie! The weather is somewhat overcast.'
+
+In [12]: f'Hello, {name}! The weather is {weather}.'                            
+Out[12]: 'Hello, Curie! The weather is somewhat overcast.'                                                             
+
+x = 2 ** 1024                                                          
+
+In [14]: type('{}'.format(x))
+
+'{:,}'.format(x)                                                       
+Out[16]: '179,769,313,486,231,590,772,930,519,078,902,473,361,797,697,894,230,657,273,430,081,157,732,675,805,500,963,132,708,477,322,407,536,021,120,113,879,871,393,357,658,789,768,814,416,622,492,847,430,639,474,124,377,767,893,424,865,485,276,302,219,601,246,094,119,453,082,952,085,005,768,838,150,682,342,462,881,473,913,110,540,827,237,163,350,510,684,586,298,239,947,245,938,479,716,304,835,356,329,624,224,137,216'
+
+In [20]: x = 123                                                                
+
+In [21]: f'x in binary is {x:b}'                                                
+Out[21]: 'x in binary is 1111011'
+
+In [22]: f'{x} in binary is {x:b}'                                              
+Out[22]: '123 in binary is 1111011'
+
+greeting = 'Hello, Curie!'                                             
+
+In [24]: greeting.lower()                                                       
+Out[24]: 'hello, curie!'
+
+In [25]: greeting.upper()                                                       
+Out[25]: 'HELLO, CURIE!'
+
+In [26]: greeting.split(', ')                                                   
+Out[26]: ['Hello', 'Curie!']
+
+In [27]: '210.834.7465'                                                         
+Out[27]: '210.834.7465'
+
+In [28]: '210.834.7465'.split('.')                                              
+Out[28]: ['210', '834', '7465']
+
+In [30]: '-'.join('210.834.7465'.split('.'))                                    
+Out[30]: '210-834-7465'
+
+In [31]: greeting = 'Hello, Curie!'                                             
+
+In [32]: greeting[:]                                                            
+Out[32]: 'Hello, Curie!'
+# Step
+In [33]: greeting[::-1]                                                         
+Out[33]: '!eiruC ,olleH'
+
