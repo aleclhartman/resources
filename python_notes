@@ -85,3 +85,24 @@ Out[32]: 'Hello, Curie!'
 In [33]: greeting[::-1]                                                         
 Out[33]: '!eiruC ,olleH'
 
+In [34]: 'racecar' # is this a palindrome?                                      
+Out[34]: 'racecar'
+
+In [35]: word = 'racecar'                                                       
+
+In [36]: word == word[::-1]                                                     
+Out[36]: True
+
+
+In [6]: s = 'Curie'                                                             
+
+In [7]: s[0]                                                                    
+Out[7]: 'C'
+
+In [8]: s[0][0]                                                                 
+Out[8]: 'C'
+
+In [9]: s[0][0][0][0][0][0][0]                                                  
+Out[9]: 'C'
+
+In [10]:                    
